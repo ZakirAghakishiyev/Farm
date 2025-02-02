@@ -8,11 +8,10 @@ namespace Farm
 {
     internal class Customer:Person
     {
-        public Customer(string name, string userType,decimal budget) : base(name, userType)
+        public Customer(string name,decimal budget) : base(name)
         {
             Budget = budget;
             Name = name;
-            UserType = userType;
         }
         public decimal Budget {  get; set; }  
     }

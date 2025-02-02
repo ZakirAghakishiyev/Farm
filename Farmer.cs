@@ -8,11 +8,10 @@ namespace Farm
 {
     internal class Farmer : Person
     {
-        public Farmer(Farm farm,string name, string userType):base(name,userType) 
+        public Farmer(Farm farm,string name):base(name) 
         {
             Farm = farm;
             Name= name;
-            UserType=userType;
         }
 
         public Farm Farm {  get; set; }
